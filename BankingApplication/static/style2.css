@@ -1,0 +1,131 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color:#333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  
+ background-image: url("images/image.png");
+ background-size: cover; 
+ background-position: center center; 
+background-repeat: no-repeat; 
+
+}
+h2{
+    text-shadow: 2px 0px 2px #ff004f;
+    color:white;
+}
+p{
+    color:red;
+}
+
+
+.flash-message {
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    color: white;
+}
+.dashboard-container {
+    margin: 20px auto;
+    width: 400px;
+    padding: 20px;
+    border: 2px solid #ff004f;
+    background-color: black;
+    border-radius: 8px;
+   
+}
+button.toggle {
+    background-color: #ff004f;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+button.toggle:hover {
+    background-color: black,
+}
+.form-section {
+    display: none;
+    margin-top: 10px;
+}
+form {
+    margin-bottom: 20px;
+}
+form input,
+form button {
+    margin: 5px;
+}
+#transaction-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#transaction-table th, #transaction-table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+    color: #fff;
+}
+
+#transaction-table input {
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    font-size: 16px;
+    color: #ddd;
+}
+
+#transaction-history {
+    margin-top: 20px;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color:grey;
+}
+
+.logout-btn {
+    background-color: #ff004f;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-top: 20px;
+}
+.logout-btn:hover {
+    background-color: black;
+}
+#toggle-btn {
+        padding: 10px 20px;  
+        font-size: 16px;  
+        background-color: #ff004f;
+        color: white;  
+        border: none;  
+        border-radius: 5px;  
+        cursor: pointer;  
+        transition: background-color 0.3s, transform 0.3s;  
+      }
+      
+      #toggle-btn:hover {
+        background-color: black;
+      }
+      
+      #toggle-btn:active {
+        transform: scale(0.98);  
+      }
+      
+      #toggle-btn:focus {
+        outline: none;  
+        box-shadow: 0 0 5px 2px rgba(72, 150, 67, 0.5); 
+      }

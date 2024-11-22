@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style2.css') }}">
+    
+    <script>
+        // Function to toggle any section visibility
+        function toggleSection(sectionId) {
+            const section = document.getElementById(sectionId);
+            section.style.display = section.style.display === 'block' ? 'none' : 'block';
+        }
+
+      
+        function toggleTransactionHistory() {
+            const transactionList = document.getElementById('transaction-list');
+            const toggleBtn = document.getElementById('toggle-btn');
+            if (transactionList.style.display === 'none') {
+                transactionList.style.display = 'block';
+                toggleBtn.textContent = 'Hide Transaction History';
+            } else {
+                transactionList.style.display = 'none';
+                toggleBtn.textContent = 'Show Transaction History';
+            }
+        }
+
+        function toggleTransactionHistory() {
+            var historyDiv = document.getElementById("transaction-history");
+            var button = document.getElementById("toggle-btn");
+    
+            if (historyDiv.style.display === "none") {
+                historyDiv.style.display = "block";
+                button.innerText = "Hide Transaction History";
+            } else {
+                historyDiv.style.display = "none";
+                button.innerText = "Show Transaction History";
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="dashboard-container">
+        <h2>Welcome, {{ account.name }}!</h2>
+        <p>Your account balance is: R{{ account.balance }}</p>
+
+         <!-- Display error message if any -->
+         {% with messages = get_flashed_messages(with_categories=True) %}
+         {% if messages %}
+         <div class="flash-messages">
+             {% for category, message in messages %}
+                 <div class="flash-message {{ category }}">{{ message }}</div>
+             {% endfor %}
+         </div>
+         {% endif %}
+         {% endwith %}
+        <!-- Deposit Funds -->
+<button class="toggle" onclick="toggleSection('deposit-section')">Deposit Funds</button>
+<div id="deposit-section" class="form-section" style="display: none;">
+    <form action="{{ url_for('dashboard', account_number=account_number) }}" method="POST">
+        <input type="number" step="0.01" name="amount" placeholder="Amount to deposit" required>
+        <button type="submit" name="action" value="deposit">Deposit</button>
+    </form>
+</div>
+
+<!-- Withdraw Funds -->
+<button class="toggle" onclick="toggleSection('withdraw-section')">Withdraw Funds</button>
+<div id="withdraw-section" class="form-section" style="display: none;">
+    <form action="{{ url_for('dashboard', account_number=account_number) }}" method="POST">
+        <input type="number" step="0.01" name="amount" placeholder="Amount to withdraw" required>
+        <button type="submit" name="action" value="withdraw">Withdraw</button>
+    </form>
+</div>
+
+<!-- Transfer Funds -->
+<button class="toggle" onclick="toggleSection('transfer-section')">Transfer Funds</button>
+<div id="transfer-section" class="form-section" style="display: none;">
+    <form action="{{ url_for('dashboard', account_number=account_number) }}" method="POST">
+        <input type="number" step="0.01" name="amount" placeholder="Amount to transfer" required>
+        <input type="number" name="recipient_account" placeholder="Recipient Account Number" required>
+        <button type="submit" name="action" value="transfer">Transfer</button>
+    </form>
+</div>
+
+        <!-- Transaction History -->
+        <button id="toggle-btn" onclick="toggleTransactionHistory()">Show Transaction History</button>
+
+        <div id="transaction-history" style="display:none;">
+            <form id="transaction-history-form">
+                <table id="transaction-table">
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Type</th>
+                            <th>Amount</th>
+                            <th>Details</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for transaction in account['transactions'] %}
+                            <tr>
+                                <td><input type="text" value="{{ transaction['date'] }}" readonly></td>
+                                <td><input type="text" value="{{ transaction['type'] }}" readonly></td>
+                                <td><input type="text" value="{{ transaction['amount'] }}" readonly></td>
+                                <td><input type="text" value="{{ transaction['details'] }}" readonly></td>
+                            </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </form>
+        </div>
+
+        <!-- Log Out Button -->
+        <div class="logout-link">
+            <p><button onclick="window.location.href='/login';" class="logout-btn">Log out</button></p>
+        </div>
+    </div>
+</body>
+</html>

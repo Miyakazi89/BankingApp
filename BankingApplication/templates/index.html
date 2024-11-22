@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create a New Account</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    {% with messages = get_flashed_messages(with_categories=True) %}
+    {% if messages %}
+        <div class="flash-messages">
+            {% for category, message in messages %}
+                <div class="flash-message {{ category }}">{{ message }}</div>
+            {% endfor %}
+        </div>
+    {% endif %}
+{% endwith %}
+    <div class="form-container">
+        <h2>Create a New Account</h2>
+        <form action="/create_account" method="POST">
+            <div class="form-group">
+                <label for="name">First Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="surname">Last Name:</label>
+                <input type="text" id="surname" name="surname" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="text" id="phone" name="phone" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="id_number">ID Number:</label>
+                <input type="text" id="id_number" name="id_number" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+
+            <button type="submit" class="submit-btn">Create Account</button>
+        </form>
+        <p>Already have an account? <a href="/login">Login</a></p>
+    </div>
+
+    <script>
+        // Client-side validation function
+        function validateForm() {
+            // Validate first name and last name (only letters)
+            var name = document.getElementById('name').value;
+            var surname = document.getElementById('surname').value;
+            var nameRegex = /^[a-zA-Z]+$/;
+
+            if (!name.match(nameRegex)) {
+                alert("First Name can only contain letters.");
+                return false;
+            }
+
+            if (!surname.match(nameRegex)) {
+                alert("Last Name can only contain letters.");
+                return false;
+            }
+
+            // Validate ID number (exactly 13 digits)
+            var idNumber = document.getElementById('id_number').value;
+            var idNumberRegex = /^\d{13}$/;
+
+            if (!idNumber.match(idNumberRegex)) {
+                alert("ID Number must be exactly 13 digits.");
+                return false;
+            }
+
+            // Validate username (must be an email)
+            var username = document.getElementById('username').value;
+            var emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+
+            if (!username.match(emailRegex)) {
+                alert("Username must be a valid email address.");
+                return false;
+            }
+
+            return true;
+        }
+    </script>
+</body>
+</html>

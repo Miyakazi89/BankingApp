@@ -1,0 +1,325 @@
+{
+    "accounts": {
+        "1250689555012860": {
+            "name": "Miya",
+            "surname": "Mafuduka",
+            "phone": "0840957359",
+            "id_number": "7990513118908",
+            "username": "miyakazimafuduka@gmail.com",
+            "password": "Likhanye@99",
+            "balance": 6287.1,
+            "transactions": [
+                {
+                    "date": "2024-11-22 09:38:57",
+                    "type": "Deposit",
+                    "amount": 2000.0,
+                    "details": "Deposited R2000.0"
+                },
+                {
+                    "date": "2024-11-22 09:39:28",
+                    "type": "Transfer",
+                    "amount": 2000.0,
+                    "details": "Transferred R2000.0 to Account 1250689555012860"
+                },
+                {
+                    "date": "2024-11-22 09:39:28",
+                    "type": "Received",
+                    "amount": 2000.0,
+                    "details": "Received R2000.0 from Account 1250689555012860"
+                },
+                {
+                    "date": "2024-11-22 09:45:40",
+                    "type": "Transfer",
+                    "amount": 2000.0,
+                    "details": "Transferred R2000.0 to Account 1250689555012860"
+                },
+                {
+                    "date": "2024-11-22 09:45:40",
+                    "type": "Received",
+                    "amount": 2000.0,
+                    "details": "Received R2000.0 from Account 1250689555012860"
+                },
+                {
+                    "date": "2024-11-22 09:45:43",
+                    "type": "Transfer",
+                    "amount": 2000.0,
+                    "details": "Transferred R2000.0 to Account 1250689555012860"
+                },
+                {
+                    "date": "2024-11-22 09:45:43",
+                    "type": "Received",
+                    "amount": 2000.0,
+                    "details": "Received R2000.0 from Account 1250689555012860"
+                },
+                {
+                    "date": "2024-11-22 09:46:02",
+                    "type": "Transfer",
+                    "amount": 2000.0,
+                    "details": "Transferred R2000.0 to Account 1250689555012860"
+                },
+                {
+                    "date": "2024-11-22 09:46:02",
+                    "type": "Received",
+                    "amount": 2000.0,
+                    "details": "Received R2000.0 from Account 1250689555012860"
+                },
+                {
+                    "date": "2024-11-22 10:29:28",
+                    "type": "Transfer",
+                    "amount": 2000.0,
+                    "details": "Transferred R2000.0 to Account 1250689555012860"
+                },
+                {
+                    "date": "2024-11-22 10:29:28",
+                    "type": "Received",
+                    "amount": 2000.0,
+                    "details": "Received R2000.0 from Account 1250689555012860"
+                },
+                {
+                    "date": "2024-11-22 10:29:42",
+                    "type": "Deposit",
+                    "amount": 2000.0,
+                    "details": "Deposited R2000.0"
+                },
+                {
+                    "date": "2024-11-22 10:31:53",
+                    "type": "Deposit",
+                    "amount": 2000.0,
+                    "details": "Deposited R2000.0"
+                },
+                {
+                    "date": "2024-11-22 10:33:35",
+                    "type": "Deposit",
+                    "amount": 2000.0,
+                    "details": "Deposited R2000.0"
+                },
+                {
+                    "date": "2024-11-22 10:33:57",
+                    "type": "Transfer",
+                    "amount": 1000.0,
+                    "details": "Transferred R1000.0 to Account 1250689555012860"
+                },
+                {
+                    "date": "2024-11-22 10:33:57",
+                    "type": "Received",
+                    "amount": 1000.0,
+                    "details": "Received R1000.0 from Account 1250689555012860"
+                },
+                {
+                    "date": "2024-11-22 11:43:40",
+                    "type": "Withdraw",
+                    "amount": 233.0,
+                    "details": "Withdrew R233.0"
+                },
+                {
+                    "date": "2024-11-22 12:14:58",
+                    "type": "Withdraw",
+                    "amount": -10.0,
+                    "details": "Withdrew R-10.0"
+                },
+                {
+                    "date": "2024-11-22 12:15:08",
+                    "type": "Deposit",
+                    "amount": 10.1,
+                    "details": "Deposited R10.1"
+                },
+                {
+                    "date": "2024-11-22 12:46:16",
+                    "type": "Deposit",
+                    "amount": -1000.0,
+                    "details": "Deposited R-1000.0"
+                },
+                {
+                    "date": "2024-11-22 12:46:33",
+                    "type": "Deposit",
+                    "amount": -500.0,
+                    "details": "Deposited R-500.0"
+                }
+            ]
+        },
+        "7951758178235359": {
+            "name": "Miya",
+            "surname": "Mafuduka",
+            "phone": "0840957359",
+            "id_number": "7990513118908",
+            "username": "miyakazimafuduka@gmail.com",
+            "password": "Likhanye@99",
+            "balance": 200.0,
+            "transactions": [
+                {
+                    "date": "2024-11-22 11:58:13",
+                    "type": "Received",
+                    "amount": 200.0,
+                    "details": "Received R200.0 from Account 9238311106447106"
+                }
+            ]
+        },
+        "9238311106447106": {
+            "name": "Milokaz",
+            "surname": "Mafuduka",
+            "phone": "0840957359",
+            "id_number": "9905131189087",
+            "username": "milokazmbasa@gmail.com",
+            "password": "Mbasa@99",
+            "balance": 194030.0,
+            "transactions": [
+                {
+                    "date": "2024-11-22 11:35:09",
+                    "type": "Deposit",
+                    "amount": 200000.0,
+                    "details": "Deposited R200000.0"
+                },
+                {
+                    "date": "2024-11-22 11:35:15",
+                    "type": "Withdraw",
+                    "amount": 4000.0,
+                    "details": "Withdrew R4000.0"
+                },
+                {
+                    "date": "2024-11-22 11:46:35",
+                    "type": "Deposit",
+                    "amount": 2000.0,
+                    "details": "Deposited R2000.0"
+                },
+                {
+                    "date": "2024-11-22 11:46:39",
+                    "type": "Withdraw",
+                    "amount": 5000.0,
+                    "details": "Withdrew R5000.0"
+                },
+                {
+                    "date": "2024-11-22 11:47:05",
+                    "type": "Withdraw",
+                    "amount": 400.0,
+                    "details": "Withdrew R400.0"
+                },
+                {
+                    "date": "2024-11-22 11:48:21",
+                    "type": "Deposit",
+                    "amount": 113.0,
+                    "details": "Deposited R113.0"
+                },
+                {
+                    "date": "2024-11-22 11:49:14",
+                    "type": "Deposit",
+                    "amount": 113.0,
+                    "details": "Deposited R113.0"
+                },
+                {
+                    "date": "2024-11-22 11:49:18",
+                    "type": "Deposit",
+                    "amount": 113.0,
+                    "details": "Deposited R113.0"
+                },
+                {
+                    "date": "2024-11-22 11:49:31",
+                    "type": "Deposit",
+                    "amount": 113.0,
+                    "details": "Deposited R113.0"
+                },
+                {
+                    "date": "2024-11-22 11:50:03",
+                    "type": "Deposit",
+                    "amount": 113.0,
+                    "details": "Deposited R113.0"
+                },
+                {
+                    "date": "2024-11-22 11:50:35",
+                    "type": "Deposit",
+                    "amount": 113.0,
+                    "details": "Deposited R113.0"
+                },
+                {
+                    "date": "2024-11-22 11:51:01",
+                    "type": "Deposit",
+                    "amount": 113.0,
+                    "details": "Deposited R113.0"
+                },
+                {
+                    "date": "2024-11-22 11:51:17",
+                    "type": "Deposit",
+                    "amount": 113.0,
+                    "details": "Deposited R113.0"
+                },
+                {
+                    "date": "2024-11-22 11:51:41",
+                    "type": "Deposit",
+                    "amount": 113.0,
+                    "details": "Deposited R113.0"
+                },
+                {
+                    "date": "2024-11-22 11:52:05",
+                    "type": "Deposit",
+                    "amount": 666.0,
+                    "details": "Deposited R666.0"
+                },
+                {
+                    "date": "2024-11-22 11:52:49",
+                    "type": "Deposit",
+                    "amount": 1.0,
+                    "details": "Deposited R1.0"
+                },
+                {
+                    "date": "2024-11-22 11:52:54",
+                    "type": "Withdraw",
+                    "amount": 54.0,
+                    "details": "Withdrew R54.0"
+                },
+                {
+                    "date": "2024-11-22 11:58:13",
+                    "type": "Transfer",
+                    "amount": 200.0,
+                    "details": "Transferred R200.0 to Account 7951758178235359"
+                }
+            ]
+        },
+        "9102812966578910": {
+            "name": "Miyakazi",
+            "surname": "Mafuduka",
+            "phone": "0840957359",
+            "id_number": "9905131189087",
+            "username": "miyakazimafuduka@gmail.com",
+            "password": "Likhanye@99",
+            "balance": 0,
+            "transactions": []
+        },
+        "040315236091": {
+            "name": "Miyakazi",
+            "surname": "Mafuduka",
+            "phone": "0840957359",
+            "id_number": "0302260313081",
+            "username": "miyakazimafuduka@gmail.com",
+            "password": "Likhanye@99",
+            "balance": 0,
+            "transactions": []
+        },
+        "860310152834": {
+            "name": "Miyakazi",
+            "surname": "Mafuduka",
+            "phone": "0840957359",
+            "id_number": "0302260313082",
+            "username": "miyakazimafuduka@gmail.com",
+            "password": "Likhanye@99",
+            "balance": 0,
+            "transactions": []
+        },
+        "140352873802": {
+            "name": "Miyakazi",
+            "surname": "Mafuduka",
+            "phone": "0840957359",
+            "id_number": "0402260313081",
+            "username": "miyalomafuka@gmail.com",
+            "password": "Likhanye@99",
+            "balance": 1000.0,
+            "transactions": [
+                {
+                    "date": "2024-11-22 12:58:12",
+                    "type": "Deposit",
+                    "amount": 1000.0,
+                    "details": "Deposited R1000.0"
+                }
+            ]
+        }
+    },
+    "transactions": {}
+}
